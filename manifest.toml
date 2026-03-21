@@ -16,7 +16,6 @@ license = "MIT"
 website = "https://bagisto.com"
 demo = "https://demo.bagisto.com/"
 admindoc = "https://devdocs.bagisto.com/getting-started/installation"
-userdoc = "https://yunohost.org/apps"
 code = "https://github.com/bagisto/bagisto"
 
 [integration]
