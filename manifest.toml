@@ -1,0 +1,81 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/main/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "bagisto"
+name = "Bagisto"
+description.en = "eCommerce platform"
+description.fr = "plateforme de eCommerce"
+
+version = "2.4.0~ynh1"
+
+maintainers = ["eric_G"]
+
+[upstream]
+license = "MIT"
+website = "https://bagisto.com"
+demo = "https://demo.bagisto.com/"
+admindoc = "https://devdocs.bagisto.com/getting-started/installation"
+userdoc = "https://yunohost.org/apps"
+code = "https://github.com/bagisto/bagisto"
+
+[integration]
+yunohost = ">= 12.1.38"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/bagisto"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+    [install.language]
+    ask.en = "Choose the application language"
+    ask.fr = "Choisissez la langue de l'application"
+    type = "select"
+    choices = ["fr", "en"]
+    default = "fr"
+
+[resources]
+
+    [resources.sources]
+
+    [resources.sources.main]
+    url = "https://github.com/bagisto/bagisto/archive/refs/tags/v2.4.0.tar.gz"
+    sha256 = "c13be898a320ecf4df241bf8ad98e77af463b05783017815534ca8c92f91abf8"
+
+    autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+    allow_email = true
+
+    [resources.install_dir]
+    group = "www-data:r-x"
+
+    [resources.permissions]
+    main.url = "/"
+
+    [resources.apt]
+    packages = "mariadb-server, php8.4-mysql, php8.4-bcmath, php8.4-curl, php8.4-intl, php8.4-zip, php8.4-redis"
+
+    [resources.database]
+    type = "mysql"
+
+    [resources.composer]
+    version = "2.9.5"
+    
