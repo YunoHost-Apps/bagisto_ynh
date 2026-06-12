@@ -35,9 +35,9 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/bagisto"
+    #[install.path]
+    #type = "path"
+    #default = "/bagisto"
 
     [install.init_main_permission]
     type = "group"
