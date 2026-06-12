@@ -19,6 +19,10 @@ eCommerce platform
 <a href="https://github.com/YunoHost-Apps/bagisto_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
+
+## Screenshots
+![Screenshot of Bagisto](./doc/screenshots/bagisto.png)
+
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/bagisto)](https://ci-apps.yunohost.org/ci/apps/bagisto/)
