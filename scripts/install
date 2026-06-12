@@ -63,6 +63,9 @@ pushd $install_dir
 	php$php_version artisan optimize:clear
 popd
 
+# Fix permissions
+chown -R $app:www-data "$install_dir"
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
