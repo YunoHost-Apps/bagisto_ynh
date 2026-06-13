@@ -63,6 +63,9 @@ pushd $install_dir
 	php$php_version artisan optimize:clear
 popd
 
+# Store .env checksum after key generation
+ynh_store_file_checksum "$install_dir/.env"
+
 # Fix permissions
 chown -R $app:www-data "$install_dir"
 
