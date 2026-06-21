@@ -19,7 +19,7 @@ admindoc = "https://devdocs.bagisto.com/getting-started/installation"
 code = "https://github.com/bagisto/bagisto"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -34,10 +34,6 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
-
-    #[install.path]
-    #type = "path"
-    #default = "/bagisto"
 
     [install.init_main_permission]
     type = "group"
@@ -76,5 +72,5 @@ ram.runtime = "50M"
     type = "mysql"
 
     [resources.composer]
-    version = "2.9.5"
+    version = "2.10.1"
     
