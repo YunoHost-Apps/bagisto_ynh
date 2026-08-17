@@ -7,7 +7,7 @@ name = "Bagisto"
 description.en = "eCommerce platform"
 description.fr = "plateforme de eCommerce"
 
-version = "2.4.8~ynh1"
+version = "2.4.9~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -51,8 +51,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/bagisto/bagisto/archive/refs/tags/v2.4.8.tar.gz"
-    sha256 = "98cbfe03687c0b60034a020abf15fb86b521badc61c175539d15704700c31364"
+    url = "https://github.com/bagisto/bagisto/archive/refs/tags/v2.4.9.tar.gz"
+    sha256 = "21e167310282df023bee122c880df73e3bb9c45fd61eee08b4f5adcc29437912"
 
     autoupdate.strategy = "latest_github_tag"
 
