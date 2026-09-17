@@ -5,9 +5,9 @@ packaging_format = 2
 id = "bagisto"
 name = "Bagisto"
 description.en = "eCommerce platform"
-description.fr = "plateforme de eCommerce"
+description.fr = "Plateforme de eCommerce"
 
-version = "2.4.10~ynh1"
+version = "2.4.11~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -19,7 +19,7 @@ admindoc = "https://devdocs.bagisto.com/getting-started/installation"
 code = "https://github.com/bagisto/bagisto"
 
 [integration]
-yunohost = ">= 12.1.39"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -43,7 +43,7 @@ ram.runtime = "50M"
     ask.en = "Choose the application language"
     ask.fr = "Choisissez la langue de l'application"
     type = "select"
-    choices = ["fr", "en"]
+    choices = ["de", "en", "es", "fa", "fr", "it", "lt", "nl", "pl", "pt_BR", "uk", "zh_CN"]
     default = "fr"
 
 [resources]
@@ -51,8 +51,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/bagisto/bagisto/archive/refs/tags/v2.4.10.tar.gz"
-    sha256 = "69340e294f7a8408d6380105b306204ffb3be8dc98cb274646aef67a7cce006c"
+    url = "https://github.com/bagisto/bagisto/archive/refs/tags/v2.4.11.tar.gz"
+    sha256 = "f772c05caf97d4a2ac57ef55452d64406cf7b634775bb0252f3a57b541962ab5"
 
     autoupdate.strategy = "latest_github_tag"
 
@@ -72,5 +72,5 @@ ram.runtime = "50M"
     type = "mysql"
 
     [resources.composer]
-    version = "2.10.1"
+    version = "2.10.2"
     
